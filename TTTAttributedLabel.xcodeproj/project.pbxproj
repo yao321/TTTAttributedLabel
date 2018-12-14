@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69FBE5F6D9C54F0AD71DD7FC /* libPods-TTTAttributedLabel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DFDAB10944CA2A06F91061 /* libPods-TTTAttributedLabel.a */; };
 		DCFD667F205219CC00D43DB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFD667E205219CC00D43DB4 /* main.m */; };
 		DCFD6682205219CC00D43DB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFD6681205219CC00D43DB4 /* AppDelegate.m */; };
 		DCFD6685205219CC00D43DB4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFD6684205219CC00D43DB4 /* ViewController.m */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24DFDAB10944CA2A06F91061 /* libPods-TTTAttributedLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TTTAttributedLabel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28AFB2E52ECE7C1EFBAAF574 /* Pods-TTTAttributedLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTTAttributedLabel.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTTAttributedLabel/Pods-TTTAttributedLabel.release.xcconfig"; sourceTree = "<group>"; };
+		49C3E35FA42ADB98C2FF9DB4 /* Pods-TTTAttributedLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTTAttributedLabel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTTAttributedLabel/Pods-TTTAttributedLabel.debug.xcconfig"; sourceTree = "<group>"; };
 		DCFD667A205219CC00D43DB4 /* TTTAttributedLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTTAttributedLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFD667E205219CC00D43DB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCFD6680205219CC00D43DB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69FBE5F6D9C54F0AD71DD7FC /* libPods-TTTAttributedLabel.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7702F0F71CEEC84F4D9E5E64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49C3E35FA42ADB98C2FF9DB4 /* Pods-TTTAttributedLabel.debug.xcconfig */,
+				28AFB2E52ECE7C1EFBAAF574 /* Pods-TTTAttributedLabel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DCFD6671205219CC00D43DB4 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +99,8 @@
 				DCFD6696205219CC00D43DB4 /* TTTAttributedLabelTests */,
 				DCFD66A1205219CC00D43DB4 /* TTTAttributedLabelUITests */,
 				DCFD667B205219CC00D43DB4 /* Products */,
+				7702F0F71CEEC84F4D9E5E64 /* Pods */,
+				FAE90822B177432F94507875 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +156,14 @@
 			path = TTTAttributedLabelUITests;
 			sourceTree = "<group>";
 		};
+		FAE90822B177432F94507875 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24DFDAB10944CA2A06F91061 /* libPods-TTTAttributedLabel.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCFD66A7205219CC00D43DB4 /* Build configuration list for PBXNativeTarget "TTTAttributedLabel" */;
 			buildPhases = (
+				F0794EF7D5FDA76C66E65A10 /* [CP] Check Pods Manifest.lock */,
 				DCFD6676205219CC00D43DB4 /* Sources */,
 				DCFD6677205219CC00D43DB4 /* Frameworks */,
 				DCFD6678205219CC00D43DB4 /* Resources */,
+				C50EA497DCF672FF3D0AC85C /* [CP] Embed Pods Frameworks */,
+				E0B480B9A55FB461F90C8B79 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +297,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C50EA497DCF672FF3D0AC85C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTTAttributedLabel/Pods-TTTAttributedLabel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0B480B9A55FB461F90C8B79 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTTAttributedLabel/Pods-TTTAttributedLabel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0794EF7D5FDA76C66E65A10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DCFD6676205219CC00D43DB4 /* Sources */ = {
@@ -427,6 +502,7 @@
 		};
 		DCFD66A8205219CC00D43DB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49C3E35FA42ADB98C2FF9DB4 /* Pods-TTTAttributedLabel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E8FZT95R86;
@@ -439,6 +515,7 @@
 		};
 		DCFD66A9205219CC00D43DB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28AFB2E52ECE7C1EFBAAF574 /* Pods-TTTAttributedLabel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E8FZT95R86;
